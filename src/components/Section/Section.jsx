@@ -1,8 +1,10 @@
+import { SectionWrap, Title } from "./Section.styled";
+
 export const Section = ({ title, children }) => {
     return (
-        <section>
-            <h3>{title}</h3>
+        <SectionWrap>
+            <Title>{title}</Title>
             {children}
-        </section>
+        </SectionWrap>
     );
 }
